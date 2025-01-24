@@ -7,7 +7,7 @@
     },
     "rating": {
         "key": "The quality code of a measure.",
-        "code": "The leter code of a measure.",
+        "code": "The letter code of a measure.",
         "description": "The description of the key and code."
     },
     "assets": {
@@ -19,7 +19,7 @@
         "ts_name": "The name of the time series with respect to its granularity.",
         "from": "The date of the earliest record, yyyy-mm-dd.",
         "to": "The date of the latest record, at retrieval time, yyyy-mm-dd.",
-        "stationparameter_no": "The letter code of the measurable enviromental characteristic, e.g., SG, i.e., Staffing Gauge, denotes water level relative to a local datum.",
+        "stationparameter_no": "The letter code of the measurable environmental characteristic, e.g., SG, i.e., Staffing Gauge, denotes water level relative to a local datum.",
         "stationparameter_name": "",
         "station_latitude": "Latitude, degree decimal.",
         "station_longitude": "Longitude, degree decimal.",
