@@ -3,6 +3,7 @@
   "ending": "2025-01-01",
   "at_least": "2025-03-01",
   "period": "P1Y",
+  "frequency": "YS",
   "reacquire": false,
   "excerpt": [57532010, 52488010]
 }
