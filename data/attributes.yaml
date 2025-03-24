@@ -1,5 +1,6 @@
 starting: "2017-01-01" # Acquisition start year
 ending: "2025-01-01" # Acquisition end year
 at_least: "2025-03-01" # Has data points until at least ...
+period: "P1Y" # Acquire data via annual chunks
 reacquire: False # Reacquire all again
 excerpt: [57532010, 52488010] # If not re-acquiring, a set of specific time series in focus; via time series codes
