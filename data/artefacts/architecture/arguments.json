@@ -1,0 +1,18 @@
+{
+  "seed": 100,
+  "priors": {
+    "kernel": {
+      "variance_control": {"alpha": 3, "beta": 1},
+      "spatial_scaling": {"alpha":  2, "beta": 0.5},
+      "size": 54
+    },
+    "ml_sigma": {
+      "sigma": 3
+    },
+    "icm": {
+      "correlation": {"mu": 0, "sigma": 3},
+      "kappa": {"alpha":  1.5, "beta": 1}
+    }
+  },
+  "ahead": 168
+}
