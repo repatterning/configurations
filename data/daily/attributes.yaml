@@ -1,0 +1,4 @@
+starting: null # Acquisition start year
+ending: null # Acquisition end year
+period: "P1Y" # Acquire data via annual chunks
+frequency: "YS" # The corresponding pandas.date_range frequency value, vis-à-vis period.
