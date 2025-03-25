@@ -3,8 +3,7 @@
   "priors": {
     "kernel": {
       "variance_control": {"alpha": 3, "beta": 1},
-      "spatial_scaling": {"alpha":  2, "beta": 0.5},
-      "size": 54
+      "spatial_scaling": {"alpha":  2, "beta": 0.5}
     },
     "ml_sigma": {
       "sigma": 3
@@ -14,5 +13,14 @@
       "kappa": {"alpha":  1.5, "beta": 1}
     }
   },
-  "ahead": 168
+  "sampling": {
+    "draws": 2000,
+    "tune": 850,
+    "chains": 4,
+    "chain_method": "vectorized",
+    "nuts_sampler": "numpyro",
+    "target_accept": 0.95
+  },
+  "ahead": 96,
+  "device": "gpu"
 }
