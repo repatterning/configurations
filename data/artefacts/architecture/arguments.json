@@ -22,5 +22,6 @@
     "target_accept": 0.95
   },
   "ahead": 96,
-  "device": "gpu"
+  "device": "gpu",
+  "chunks": [2, 3, 4]
 }
