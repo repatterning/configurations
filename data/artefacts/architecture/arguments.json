@@ -25,6 +25,7 @@
   "device": "gpu",
   "catchments": {
     "chunks": [2, 3, 4],
-    "starting": "2024-12-01"
+    "starting": "2024-12-01",
+    "frequency": "YS"
   }
 }
