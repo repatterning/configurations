@@ -16,4 +16,12 @@ priors:
     kappa:
       alpha: 1.5
       beta: 1
-ahead: 168
+sampling:
+  draws: 2000
+  tune: 850
+  chains: 4
+  chain_method: "vectorized"
+  nuts_sampler: "numpyro"
+  target_accept: 0.95
+ahead: 96
+device: "gpu"
