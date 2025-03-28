@@ -1,10 +1,13 @@
 seed: 100
 spanning: 1.75
 frequency: "h"
-modelling: # Autoregressive Modelling
-  p: 1 # Auto-regressive order
-  d: 0 # The degree of first differencing
+architecture: # Autoregressive Modelling
+  p: 18 # Auto-regressive order
+  d: 1 # The degree of first differencing
   q: 0 # Moving average order
+  degree_seasonal: 1
+  degree_trend: 1
+  robust: true
 ahead: 36
 catchments:
   chunks: [2, 3, 4]
