@@ -1,31 +1,15 @@
 {
   "seed": 100,
-  "priors": {
-    "kernel": {
-      "variance_control": {"alpha": 3, "beta": 1},
-      "spatial_scaling": {"alpha":  2, "beta": 0.5}
-    },
-    "ml_sigma": {
-      "sigma": 3
-    },
-    "icm": {
-      "correlation": {"mu": 0, "sigma": 3},
-      "kappa": {"alpha":  1.5, "beta": 1}
-    }
+  "spanning": 1.75,
+  "frequency": "h",
+  "modelling": {
+    "p": 18,
+    "d": 1,
+    "q": 0
   },
-  "sampling": {
-    "draws": 2000,
-    "tune": 850,
-    "chains": 4,
-    "chain_method": "vectorized",
-    "nuts_sampler": "numpyro",
-    "target_accept": 0.95
-  },
-  "ahead": 96,
-  "device": "gpu",
+  "ahead": 36,
   "catchments": {
     "chunks": [2, 3, 4],
-    "starting": "2024-12-01",
     "frequency": "YS"
   }
 }
