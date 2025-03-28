@@ -2,10 +2,13 @@
   "seed": 100,
   "spanning": 1.75,
   "frequency": "h",
-  "modelling": {
+  "architecture": {
     "p": 18,
     "d": 1,
-    "q": 0
+    "q": 0,
+    "degree_seasonal": 1,
+    "degree_trend": 1,
+    "robust": true
   },
   "ahead": 36,
   "catchments": {
