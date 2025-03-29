@@ -1,7 +1,7 @@
 seed: 100
 spanning: 1.75
 frequency: "h"
-architecture: # Autoregressive Modelling
+parameters: # Autoregressive Modelling
   p: 18 # Auto-regressive order
   d: 1 # The degree of first differencing
   q: 0 # Moving average order
