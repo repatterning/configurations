@@ -2,7 +2,7 @@
   "seed": 100,
   "spanning": 1.75,
   "frequency": "h",
-  "architecture": {
+  "parameters": {
     "p": 18,
     "d": 1,
     "q": 0,
