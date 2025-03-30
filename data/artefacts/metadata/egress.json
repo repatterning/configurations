@@ -1,0 +1,6 @@
+{
+  "estimates.json": "A set of predictions.",
+  "extra.json": "For supplementary details.  It records the parameter estimation method, and the intrinsic covariance matrix calculation method.  Study the text of statsmodels.tsa.arima.model.ARIMA.fit.",
+  "measures.tex": "The attributes of the model.",
+  "measures.txt": "The attributes of the model."
+}
