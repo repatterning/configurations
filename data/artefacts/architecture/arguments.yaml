@@ -1,6 +1,7 @@
 seed: 100
 spanning: 1.75
 frequency: "h"
+seasons: 8760 # This is 8760 hours; for drift calculations.
 parameters: # Autoregressive Modelling
   p: 18 # Auto-regressive order
   d: 1 # The degree of first differencing

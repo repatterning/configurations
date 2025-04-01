@@ -2,6 +2,7 @@
   "seed": 100,
   "spanning": 1.75,
   "frequency": "h",
+  "seasons": 8760,
   "parameters": {
     "p": 18,
     "d": 1,
