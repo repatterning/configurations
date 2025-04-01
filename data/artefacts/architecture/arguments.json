@@ -12,7 +12,7 @@
   },
   "ahead": 18,
   "catchments": {
-    "chunks": [2, 3, 4, 5],
+    "chunks": [2, 3],
     "frequency": "YS"
   }
 }
