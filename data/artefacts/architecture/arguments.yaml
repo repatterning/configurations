@@ -11,5 +11,5 @@ parameters: # Autoregressive Modelling
   robust: true
 ahead: 18
 catchments:
-  chunks: [2, 3]
+  chunks: [2, 6]
   frequency: "YS"
