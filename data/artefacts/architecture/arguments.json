@@ -11,7 +11,8 @@
     "degree_trend": 1,
     "robust": true
   },
-  "ahead": 21,
+  "test": 13,
+  "ahead": 27,
   "catchments": {
     "chunks": [2, 6],
     "frequency": "YS"
