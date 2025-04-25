@@ -5,6 +5,20 @@
         "quality_code": "The quality code, rating, of the measure.",
         "ts_id": "The water level time series identification code."
     },
+    "fundamentals": {
+        "timestamp": "Milliseconds since 1 January 1970",
+        "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
+        "quality_code": "The quality code, rating, of the measure.",
+        "ts_id": "The water level time series identification code.",
+        "measure": "measure = value + gauge datum. The gauge datum of a gauge is the reference point of the gauge's site, in metres."
+    },
+    "resamples": {
+        "timestamp": "Milliseconds since 1 January 1970",
+        "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
+        "quality_code": "The quality code, rating, of the measure.",
+        "ts_id": "The water level time series identification code.",
+        "measure": "measure = value + gauge datum. The gauge datum of a gauge is the reference point of the gauge's site, in metres."
+    },
     "rating": {
         "key": "The quality code of a measure.",
         "code": "The letter code of a measure.",
