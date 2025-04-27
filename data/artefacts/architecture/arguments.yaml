@@ -13,4 +13,4 @@ ahead: 13
 future: 27
 catchments:
   chunks: [2, 6]
-  frequency: "YS"
+  frequency: "YS" # The data request/retrieval style.  It implies unload a year's data starting from the start of the year, e.g., 2017-01-01, 2018-01-01, etc.
