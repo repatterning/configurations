@@ -1,6 +1,6 @@
 seed: 100
-spanning: 1.75
-frequency: "h"
+spanning: 1.75 # The years of data for modelling
+frequency: "h" # The data granularity for model development; hour.
 seasons: 8760 # This is 8760 hours; for drift calculations.
 parameters: # Autoregressive Modelling
   p: 18 # Auto-regressive order
