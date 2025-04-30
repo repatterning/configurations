@@ -1,0 +1,5 @@
+reacquire: True # Reacquire all again
+excerpt: null # If not re-acquiring, a set of specific time series in focus; via time series codes, e.g., [57532010, 52488010]
+s3:
+  e_argument: "path_internal_data"
+  affix: "fundamentals"
