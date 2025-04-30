@@ -2,7 +2,8 @@
   "reacquire": true,
   "excerpt": null,
   "s3": {
-    "e_parameter": "path_internal_data",
+    "p_bucket": "internal",
+    "p_prefix": "path_internal_data",
     "affix": "fundamentals"
   }
 }
