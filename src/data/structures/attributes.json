@@ -1,6 +1,6 @@
 {
   "period": "P1Y",
   "frequency": "YS",
-  "reacquire": false,
+  "reacquire": true,
   "excerpt": null
 }
