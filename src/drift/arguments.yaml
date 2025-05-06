@@ -4,4 +4,4 @@ s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; source.  The corresponding argument is an Amazon S3 bucket value.
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; source.  The corresponding argument is an Amazon S3 prefix value.
   affix: "fundamentals" # Extends the prefix; source.
-span: 3 # Spanning 3 years
+spanning: 3 # Spanning 3 years
