@@ -4,11 +4,11 @@
   "frequency": "h",
   "seasons": {
     "number_of": 12,
-    "steps_per": [744, 672, 744, 720, 720, 744, 744, 744, 720, 744, 720, 744],
-    "drift": 8760
+    "steps_per": [744, 672, 744, 720, 720, 744, 744, 744, 720, 744, 720, 744]
   },
-  "testing": 168,
-  "ahead": 168,
+  "testing": 96,
+  "ahead": 264,
+  "n_samples": 35,
   "catchments": {
     "number_of": 2,
     "frequency": "YS"
