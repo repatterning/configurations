@@ -6,7 +6,11 @@ seasons:
   steps_per: [744, 672, 744, 720, 720, 744, 744, 744, 720, 744, 720, 744] # The hours per month, start from January.
 testing: 96 # hours
 ahead: 264 # hours
-n_samples: 35
+n_samples: 35 # For requesting samples from (a) structural time series forecasts, and (b) structural time series one-step-predictive predictions
+s3:
+  p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
+  p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
+  affix: "resamples" # Extends the prefix; vis-à-vis source.
 catchments:
   number_of: 2
   frequency: "YS" # The data request/retrieval style.  It implies unload a year's data starting from the start of the year, e.g., 2017-01-01, 2018-01-01, etc.
