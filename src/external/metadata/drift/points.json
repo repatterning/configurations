@@ -1,3 +1,3 @@
 {
-  "quantiles": "Each JSON of drift scores includes Wasserstein Distance scores, and Jensen-Shannon Distance scores."
+  "drift": "Each JSON of drift scores includes Wasserstein Distance scores, and Jensen-Shannon Distance scores."
 }
