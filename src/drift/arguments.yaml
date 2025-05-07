@@ -1,9 +1,9 @@
 reacquire: True # Reacquire all again
 excerpt: null # If not re-acquiring, a set of specific time series in focus; via time series codes, e.g., [57532010, 52488010]
 s3:
-  p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; source.  The corresponding argument is an Amazon S3 bucket value.
-  p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; source.  The corresponding argument is an Amazon S3 prefix value.
-  affix: "resamples" # Extends the prefix; source.
+  p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
+  p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
+  affix: "resamples" # Extends the prefix; vis-à-vis source.
 spanning: 2 # Spanning 2 years
 frequency: "h"
 seasons: 8760
