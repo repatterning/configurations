@@ -14,8 +14,7 @@
     "p_prefix": "path_internal_data",
     "affix": "resamples"
   },
-  "catchments": {
-    "number_of": 2,
-    "frequency": "YS"
+  "series": {
+    "excerpt": [56884010, 57031010, 57240010, 57491010, 57976010, 58179010, 59752010]
   }
 }
