@@ -4,9 +4,9 @@ frequency: "h" # The data granularity for model development; hour.
 seasons:
   number_of: 12 # 12 months
   steps_per: [744, 672, 744, 720, 720, 744, 744, 744, 720, 744, 720, 744] # The hours per month, start from January.
-  drift: 8760 # This is 8760 hours; for drift calculations.
-testing: 168 # hours
-ahead: 168 # hours
+testing: 96 # hours
+ahead: 264 # hours
+n_samples: 35
 catchments:
   number_of: 2
   frequency: "YS" # The data request/retrieval style.  It implies unload a year's data starting from the start of the year, e.g., 2017-01-01, 2018-01-01, etc.
