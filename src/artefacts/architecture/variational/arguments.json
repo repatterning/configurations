@@ -9,6 +9,11 @@
   "testing": 96,
   "ahead": 264,
   "n_samples": 35,
+  "s3": {
+    "p_bucket": "internal",
+    "p_prefix": "path_internal_data",
+    "affix": "resamples"
+  },
   "catchments": {
     "number_of": 2,
     "frequency": "YS"
