@@ -8,6 +8,8 @@
   },
   "testing": 96,
   "ahead": 264,
+  "n_variational_steps": 200,
+  "learning_rate": 0.1,
   "n_samples": 35,
   "s3": {
     "p_bucket": "internal",
