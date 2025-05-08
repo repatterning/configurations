@@ -15,3 +15,4 @@ s3:
   affix: "resamples" # Extends the prefix; vis-à-vis source.
 series:
   excerpt: [56884010, 57031010, 57240010, 57491010, 57976010, 58179010, 59752010] # If null, models are built for all series/gauges
+cpu: True # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
