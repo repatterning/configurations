@@ -34,13 +34,13 @@
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
     },
     "estimates.csv": {
-      "observation": "",
-      "lower_q": "",
-      "upper_q": "",
-      "median": "",
-      "lower_w": "",
-      "upper_w": "",
-      "milliseconds": ""
+      "observation": "An original measurement.",
+      "lower_q": "The lower quartile of a measurement's estimates.",
+      "upper_q": "The upper quartile of a measurement's estimates.",
+      "median": "The median a measurement's estimates.",
+      "lower_w": "The lower whisker of a measurement's estimates.",
+      "upper_w": "The upper whisker of a measurement's estimates.",
+      "milliseconds": "The timestamp of the original measurement, milliseconds since 1 January 1970."
     },
     "evidence_lower_bound.csv": {
       "index": "Index, ordinals.",
