@@ -1,0 +1,19 @@
+seed: 100
+spanning: 1.75 # The years of data for modelling
+frequency: "h" # The data granularity for model development; hour.
+seasons: 8760 # This is 8760 hours; for drift calculations.
+parameters: # Autoregressive Modelling
+  p: 6 # Auto-regressive order
+  d: 0 # The degree of first differencing
+  q: 0 # Moving average order
+  degree_seasonal: 1
+  degree_trend: 1
+  robust: true
+testing: 13
+ahead: 27
+s3:
+  p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
+  p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
+  affix: "resamples" # Extends the prefix; vis-à-vis source.
+series:
+  excerpt: [56884010, 57031010, 57240010, 57491010, 57976010, 58179010, 59752010] # If null, models are built for all series/gauges
