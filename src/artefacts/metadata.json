@@ -5,22 +5,22 @@
     "measures.tex": "The attributes of the model.",
     "measures.txt": "The attributes of the model.",
     "data.csv": {
-      "date": "",
-      "timestamp": "Milliseconds since 1 January 1970",
+      "date": "The datetime of a measurement.",
+      "timestamp": "The timestamp of a measurement,  milliseconds since 1 January 1970",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
     },
     "testing.csv": {
-      "date": "",
-      "timestamp": "Milliseconds since 1 January 1970",
+      "date": "The datetime of a measurement.",
+      "timestamp": "The timestamp of a measurement,  milliseconds since 1 January 1970",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
     },
     "training.csv": {
-      "date": "",
-      "timestamp": "Milliseconds since 1 January 1970",
+      "date": "The datetime of a measurement.",
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
@@ -28,8 +28,7 @@
   },
   "variational": {
     "data.csv": {
-      "date": "",
-      "timestamp": "Milliseconds since 1 January 1970",
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
@@ -44,19 +43,17 @@
       "milliseconds": ""
     },
     "evidence_lower_bound.csv": {
-      "index": "",
-      "evidence_lower_bound": ""
+      "index": "Index, ordinals.",
+      "evidence_lower_bound": "Evidence Lower Bound"
     },
     "testing.csv": {
-      "date": "",
-      "timestamp": "Milliseconds since 1 January 1970",
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
     },
     "training.csv": {
-      "date": "",
-      "timestamp": "Milliseconds since 1 January 1970",
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
