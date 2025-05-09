@@ -1,0 +1,24 @@
+{
+  "seed": 100,
+  "spanning": 1.75,
+  "frequency": "h",
+  "seasons": 8760,
+  "parameters": {
+    "p": 6,
+    "d": 0,
+    "q": 0,
+    "degree_seasonal": 1,
+    "degree_trend": 1,
+    "robust": true
+  },
+  "testing": 13,
+  "ahead": 27,
+  "s3": {
+    "p_bucket": "internal",
+    "p_prefix": "path_internal_data",
+    "affix": "resamples"
+  },
+  "series": {
+    "excerpt": [56884010, 57031010, 57240010, 57491010, 57976010, 58179010, 59752010]
+  }
+}
