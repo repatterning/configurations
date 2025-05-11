@@ -16,4 +16,4 @@ s3:
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
   affix: "resamples" # Extends the prefix; vis-à-vis source.
 series:
-  excerpt: [56884010, 57031010, 57240010, 57491010, 57976010, 58179010, 59752010] # If null, models are built for all series/gauges
+  excerpt: [55806010, 55936010, 55952010, 55733010, 55790010, 55838010, 56073010, 55774010, 55920010, 55968010, 56016010, 56048010, 55822010, 56203010, 55895010, 56114010, 56146010, 55758010, 55984010, 56032010, 56130010, 56162010, 55717010, 55863010, 56098010, 56178010, 56000010, 55879010, 59605010, 59631010, 61573010, 61557010, 65244010, 65228010, 59227010, 60996010] # If null, models are built for all series/gauges
