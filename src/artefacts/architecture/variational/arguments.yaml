@@ -14,5 +14,5 @@ s3:
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
   affix: "resamples" # Extends the prefix; vis-à-vis source.
 series:
-  excerpt: [56884010, 57031010, 57240010, 57491010, 57976010, 58179010, 59752010] # If null, models are built for all series/gauges
+  excerpt: [56884010, 57031010, 57240010, 57491010, 57976010, 58179010, 59752010, 51453010, 55408010, 55440010, 55351010, 55367010, 55481010, 55513010, 55157010, 55538010, 55221010, 55237010, 55205010, 55285010, 55465010, 55173010, 55189010, 55326010, 55383010, 55554010, 55253010, 55424010, 55301010, 55269010, 55497010, 58868010, 60116010, 61541010, 61525010] # If null, models are built for all series/gauges
 cpu: True # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
