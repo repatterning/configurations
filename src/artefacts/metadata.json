@@ -1,9 +1,17 @@
 {
   "autoregressive": {
-    "estimates.json": "A set of predictions.",
-    "extra.json": "For supplementary details.  It records the parameter estimation method, and the intrinsic covariance matrix calculation method.  Study the text of statsmodels.tsa.arima.model.ARIMA.fit.",
-    "measures.tex": "The attributes of the model.",
-    "measures.txt": "The attributes of the model.",
+    "estimates.json": {
+      "description": "A set of predictions."
+    },
+    "extra.json": {
+      "description": "For supplementary details.  It records the parameter estimation method, and the intrinsic covariance matrix calculation method.  Study the text of statsmodels.tsa.arima.model.ARIMA.fit."
+    },
+    "measures.tex": {
+      "description": "The attributes of the model."
+    },
+    "measures.txt": {
+      "description": "The attributes of the model."
+    },
     "data.csv": {
       "date": "The datetime of a measurement.",
       "timestamp": "The timestamp of a measurement,  milliseconds since 1 January 1970.",
