@@ -11,8 +11,8 @@
     "degree_trend": 1,
     "robust": true
   },
-  "testing": 13,
-  "ahead": 27,
+  "testing": 7,
+  "ahead": 18,
   "s3": {
     "p_bucket": "internal",
     "p_prefix": "path_internal_data",
