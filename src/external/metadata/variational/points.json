@@ -1,0 +1,4 @@
+{
+  "errors": "Sets of root mean square errors, and percentage error distributions.",
+  "predictions": "Includes the original observation, prediction estimates, and error percentages.  For example, lower_q: lower quartile, upper_q: upper quartile, lower_w: lower whisker, upper_w: upper whisker, p_error: percentage error, p_e_lower_w: percentage error lower whisker, p_e_upper_w: percentage error upper whisker ."
+}
