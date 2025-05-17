@@ -1,5 +1,5 @@
 {
-  "excerpt": null,
+  "excerpt": [56178010, 59711010],
   "s3": {
     "p_bucket": "internal",
     "p_prefix": "path_internal_data",
