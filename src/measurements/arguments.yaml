@@ -1,7 +1,7 @@
-excerpt: null # If not all, a set of specific time series in focus; via time series codes, e.g., [277155, 277177, 277183]
+excerpt: null # If not all, a set of specific time series in focus; via time series codes, e.g., [57322010, 57363010]
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
   affix: "fundamentals" # Extends the prefix; vis-à-vis source.
-spanning: 3.5 # Spanning 3.5 years
+spanning: 4.5 # Spanning 4.5 years
 frequency: 0.25 # Hours
