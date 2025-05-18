@@ -1,5 +1,4 @@
 {
-  "excerpt": [57322010, 57363010],
   "s3": {
     "p_bucket": "internal",
     "p_prefix": "path_internal_data",

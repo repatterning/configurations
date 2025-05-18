@@ -1,4 +1,3 @@
-excerpt: [57322010, 57363010] # If not all, a set of specific time series in focus; via time series codes, e.g., [57532010, 52488010]
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter.  The corresponding argument is an Amazon S3 bucket value.
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter.  The corresponding argument is an Amazon S3 prefix value.
