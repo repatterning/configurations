@@ -1,4 +1,3 @@
 period: "P1Y" # Acquire data via annual chunks
 frequency: "YS" # The corresponding pandas.date_range frequency value, vis-à-vis period.
-reacquire: False # Reacquire all again
-excerpt: null # If not re-acquiring, a set of specific time series in focus; via time series codes, e.g., [56884010, 57031010].  If null, and reacquire is False, then the standard behaviour is -> structure the raw data of the current & previous year
+restart: False # Per gauge, re-compute across all years
