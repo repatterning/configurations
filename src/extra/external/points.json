@@ -1,5 +1,4 @@
 {
-  "drift": "Sets of drift scores.",
   "errors": "Sets of root mean square errors, and percentage error distributions.",
   "predictions": "The predictions."
 }
