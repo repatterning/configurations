@@ -4,7 +4,7 @@
     "p_prefix": "path_internal_data",
     "affix": "resamples"
   },
-  "spanning": 3,
+  "spanning": 5,
   "frequency": "h",
   "seasons": 8760
 }
