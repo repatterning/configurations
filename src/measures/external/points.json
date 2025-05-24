@@ -1,0 +1,4 @@
+{
+  "continuous": "For drawing a gauge's continuous river level time series.",
+  "splits": "For drawing a gauge's river level time series by year."
+}
