@@ -6,8 +6,8 @@
     "number_of": 12,
     "steps_per": [744, 672, 744, 720, 720, 744, 744, 744, 720, 744, 720, 744]
   },
-  "testing": 96,
-  "ahead": 264,
+  "testing": 84,
+  "ahead": 108,
   "n_variational_steps": 200,
   "learning_rate": 0.1,
   "n_samples": 35,
