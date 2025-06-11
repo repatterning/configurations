@@ -4,8 +4,8 @@ frequency: "h" # The data granularity for model development; hour.
 seasons:
   number_of: 12 # 12 months
   steps_per: [744, 672, 744, 720, 720, 744, 744, 744, 720, 744, 720, 744] # The hours per month, start from January.
-testing: 96 # hours - The testing stage will span these number of hours of
-ahead: 264 # hours - The number of prediction hours ahead
+testing: 84 # hours - The testing stage will span these number of hours of
+ahead: 108 # hours - The number of prediction hours ahead
 n_variational_steps: 200 # Refer to num_steps within https://www.tensorflow.org/probability/api_docs/python/tfp/vi/fit_surrogate_posterior
 learning_rate: 0.1 # For optimisation algorithms
 n_samples: 35 # For requesting samples from (a) structural time series forecasts, and (b) structural time series one-step-predictive predictions
