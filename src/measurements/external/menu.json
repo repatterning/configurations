@@ -1,8 +1,0 @@
-{
-  "annual": {
-    "desc": "For selecting a gauge's graph of superimposed Gregorian year time series via its time series identifier."
-  },
-  "contrasts": {
-    "desc": "For selecting a catchment's set of time series via its identifier."
-  }
-}

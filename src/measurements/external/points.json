@@ -1,9 +1,0 @@
-{
-  "annual": {
-    "desc": "For drawing superimposed Gregorian year splines of a gauge's river level time series."
-
-  },
-  "contrasts": {
-    "desc": "For drawing the river level time series splines of a catchment's gauges."
-  }
-}
