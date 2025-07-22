@@ -1,0 +1,10 @@
+{
+  "s3": {
+    "p_bucket": "internal",
+    "p_prefix": "path_internal_data",
+    "affix": "fundamentals"
+  },
+  "spanning": 0.05,
+  "frequency": 0.25,
+  "tau": [0.25, 1, 2]
+}
