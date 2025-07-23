@@ -4,7 +4,7 @@
     "p_prefix": "path_internal_data",
     "affix": "fundamentals"
   },
-  "spanning": 0.05,
+  "spanning": 0.015,
   "frequency": 0.25,
   "tau": [0.25, 1, 2]
 }
