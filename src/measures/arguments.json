@@ -2,8 +2,8 @@
   "s3": {
     "p_bucket": "internal",
     "p_prefix": "path_internal_data",
-    "affix": "resamples"
+    "affix": "fundamentals"
   },
-  "spanning": 5,
-  "frequency": 1
+  "spanning": 4,
+  "frequency": 0.25
 }
