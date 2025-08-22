@@ -1,38 +1,37 @@
 {
-  "autoregressive": {
-    "estimates.json": {
-      "description": "A set of predictions."
-    },
-    "extra.json": {
-      "description": "For supplementary details.  It records the parameter estimation method, and the intrinsic covariance matrix calculation method.  Study the text of statsmodels.tsa.arima.model.ARIMA.fit."
-    },
-    "measures.tex": {
-      "description": "The attributes of the model."
-    },
-    "measures.txt": {
-      "description": "The attributes of the model."
-    },
+  "latest": {
     "data.csv": {
-      "date": "The datetime of a measurement.",
-      "timestamp": "The timestamp of a measurement,  milliseconds since 1 January 1970.",
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
     },
+    "estimates.csv": {
+      "observation": "An original measurement.",
+      "lower_q": "The lower quartile of a measurement's estimates.",
+      "upper_q": "The upper quartile of a measurement's estimates.",
+      "median": "The median a measurement's estimates.",
+      "lower_w": "The lower whisker of a measurement's estimates.",
+      "upper_w": "The upper whisker of a measurement's estimates.",
+      "milliseconds": "The timestamp of the original measurement, milliseconds since 1 January 1970."
+    },
+    "evidence_lower_bound.csv": {
+      "index": "The ordinal index of an evidence bound value.",
+      "evidence_lower_bound": "An evidence lower bound value."
+    },
     "testing.csv": {
-      "date": "The datetime of a measurement.",
-      "timestamp": "The timestamp of a measurement,  milliseconds since 1 January 1970.",
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
     },
     "training.csv": {
-      "date": "The datetime of a measurement.",
       "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
     }
+
   },
   "variational": {
     "data.csv": {

@@ -1,0 +1,23 @@
+{
+  "seed": 25,
+  "spanning": 2.5,
+  "frequency": "h",
+  "seasons": {
+    "number_of": 12,
+    "steps_per": [744, 672, 744, 720, 720, 744, 744, 744, 720, 744, 720, 744]
+  },
+  "testing": 84,
+  "ahead": 36,
+  "n_variational_steps": 200,
+  "learning_rate": 0.1,
+  "n_samples": 35,
+  "s3": {
+    "p_bucket": "internal",
+    "p_prefix": "path_internal_data",
+    "affix": "resamples"
+  },
+  "series": {
+    "excerpt": [54464010, 54611010, 54448010]
+  },
+  "cpu": true
+}
