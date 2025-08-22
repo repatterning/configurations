@@ -1,0 +1,18 @@
+seed: 25
+spanning: 2.5 # 2.5 years of data for modelling
+frequency: "h" # The data granularity for model development; hour.
+seasons:
+  number_of: 12 # 12 months
+  steps_per: [744, 672, 744, 720, 720, 744, 744, 744, 720, 744, 720, 744] # The hours per month, start from January.
+testing: 84 # hours - The testing stage will span these number of hours of
+ahead: 36 # hours - The number of prediction hours ahead
+n_variational_steps: 200 # Refer to num_steps within https://www.tensorflow.org/probability/api_docs/python/tfp/vi/fit_surrogate_posterior
+learning_rate: 0.1 # For optimisation algorithms
+n_samples: 35 # For requesting samples from (a) structural time series forecasts, and (b) structural time series one-step-predictive predictions
+s3:
+  p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
+  p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
+  affix: "resamples" # Extends the prefix; vis-à-vis source.
+series:
+  excerpt: [54464010, 54611010, 54448010] # If null, models are built for all series/gauges
+cpu: True # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
