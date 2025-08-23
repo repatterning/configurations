@@ -19,6 +19,6 @@
   "series": {
     "excerpt": [54464010, 54611010, 54448010]
   },
-  "cpu": true,
+  "cpu": false,
   "project_key_name": "HydrographyProject"
 }
