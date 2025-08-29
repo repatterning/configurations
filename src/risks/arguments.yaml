@@ -4,6 +4,6 @@ s3:
   affix: "fundamentals" # Extends the prefix; vis-à-vis source.
 spanning: 0.05 # Spanning (0.05 * 365) days
 frequency: 0.25 # Hours
-tau: [0.25, 1, 2] # The rates of change denominators; hours.
+tau: [0.25, 1] # The rates of change denominators; hours.
 rates:
-  n_catchments_visible: 9 # The number of visible catchments, in relation to the latest millimetres/hour map, and in relation to risk.  Catchments that have the highest max(millimetres/hour) should be highlighted.
+  n_catchments_visible: 8 # The number of visible catchments, in relation to the latest millimetres/hour map, and in relation to risk.  Catchments that have the highest max(millimetres/hour) should be highlighted.
