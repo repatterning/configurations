@@ -1,0 +1,4 @@
+seed: 5
+s3:
+  p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
+project_key_name: "HydrographyProject" # The project's key name
