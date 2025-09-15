@@ -1,0 +1,7 @@
+{
+  "seed": 5,
+  "s3": {
+    "p_bucket": "internal"
+  },
+  "project_key_name": "HydrographyProject"
+}
