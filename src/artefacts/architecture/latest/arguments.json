@@ -1,5 +1,5 @@
 {
-  "seed": 25,
+  "seed": 5,
   "spanning": 2.5,
   "frequency": "h",
   "seasons": {
@@ -8,9 +8,9 @@
   },
   "testing": 84,
   "ahead": 36,
-  "n_variational_steps": 200,
+  "n_variational_steps": 500,
   "learning_rate": 0.1,
-  "n_samples": 35,
+  "n_samples": 65,
   "s3": {
     "p_bucket": "internal",
     "p_prefix": "path_internal_data",
