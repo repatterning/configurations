@@ -4,3 +4,4 @@ s3:
   prefix: "warning" # The Amazon S3 prefix string for the warning objects.
 cpu: True # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
 project_key_name: "HydrographyProject" # The project's key name
+testing: True # A test run?
