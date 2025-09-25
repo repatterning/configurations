@@ -6,7 +6,7 @@ seasons:
   steps_per: [744, 672, 744, 720, 720, 744, 744, 744, 720, 744, 720, 744] # The hours per month, start from January.
 testing: 84 # hours - The testing stage will span these number of hours of
 ahead: 36 # hours - The number of prediction hours ahead
-n_variational_steps: 500 # Refer to num_steps within https://www.tensorflow.org/probability/api_docs/python/tfp/vi/fit_surrogate_posterior
+n_variational_steps: 350 # Refer to num_steps within https://www.tensorflow.org/probability/api_docs/python/tfp/vi/fit_surrogate_posterior
 learning_rate: 0.1 # For optimisation algorithms
 n_samples: 65 # For requesting samples from (a) structural time series forecasts, and (b) structural time series one-step-predictive predictions
 s3:
@@ -15,5 +15,5 @@ s3:
   affix: "resamples" # Extends the prefix; vis-à-vis source.
 series:
   excerpt: [54464010, 54611010, 54448010] # If null, models are built for all series/gauges
-cpu: False # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
+cpu: True # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
 project_key_name: "HydrographyProject" # The project's key name
