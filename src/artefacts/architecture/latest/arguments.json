@@ -1,6 +1,6 @@
 {
-  "seed": 5,
-  "spanning": 2.5,
+  "seed": 25,
+  "spanning": 2.0,
   "frequency": "h",
   "seasons": {
     "number_of": 12,
@@ -19,6 +19,6 @@
   "series": {
     "excerpt": [54464010, 54611010, 54448010]
   },
-  "cpu": true,
+  "cpu": false,
   "project_key_name": "HydrographyProject"
 }
