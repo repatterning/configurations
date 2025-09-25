@@ -5,3 +5,15 @@ s3:
 cpu: True # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
 project_key_name: "HydrographyProject" # The project's key name
 testing: True # A test run?
+scheduler: # Study https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/scheduler.html
+  name: "HydrographyWarningSystem"
+  schedule_expression: "rate(2 hours)"
+  schedule_expression_timezone: "Europe/Dublin"
+  target:
+    retry_policy:
+      maximum_event_age_in_seconds: 900
+      maximum_retry_attempts: 1
+  action_after_completion: "DELETE"
+  flexible_time_window:
+    mode: "FLEXIBLE"
+    maximum_window_in_minutes: 3
