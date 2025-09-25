@@ -8,7 +8,7 @@
   },
   "testing": 84,
   "ahead": 36,
-  "n_variational_steps": 500,
+  "n_variational_steps": 350,
   "learning_rate": 0.1,
   "n_samples": 65,
   "s3": {
@@ -19,6 +19,6 @@
   "series": {
     "excerpt": [54464010, 54611010, 54448010]
   },
-  "cpu": false,
+  "cpu": true,
   "project_key_name": "HydrographyProject"
 }
