@@ -8,7 +8,7 @@
   },
   "testing": 84,
   "ahead": 36,
-  "n_variational_steps": 350,
+  "n_variational_steps": 500,
   "learning_rate": 0.1,
   "n_samples": 65,
   "s3": {
