@@ -1,5 +1,5 @@
-seed: 5
-spanning: 2.5 # 2.5 years of data for modelling
+seed: 25
+spanning: 2.0 # 2.0 years of data for modelling
 frequency: "h" # The data granularity for model development; hour.
 seasons:
   number_of: 12 # 12 months
@@ -15,5 +15,5 @@ s3:
   affix: "resamples" # Extends the prefix; vis-à-vis source.
 series:
   excerpt: [54464010, 54611010, 54448010] # If null, models are built for all series/gauges
-cpu: True # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
+cpu: False # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
 project_key_name: "HydrographyProject" # The project's key name
