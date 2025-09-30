@@ -6,11 +6,11 @@ cpu: True # Should computations proceed via a machine's Central Processing Unit 
 project_key_name: "HydrographyProject" # The project's key name
 testing: True # A test run?
 scheduler_events: # Study https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/scheduler.html
-  name: "HydrographyEvents"
-  schedule_expression: cron(15 11,23 * * ? *)
+  name: "HydrographyWarningDiscrete"
+  schedule_expression: cron(45 09,21 * * ? *)
   schedule_expression_timezone: "Europe/Dublin"
   target:
-    arn_node: "schedule-target-arn-h-events"
+    arn_node: "schedule-target-arn-h-warning-discrete"
     retry_policy:
       maximum_event_age_in_seconds: 900
       maximum_retry_attempts: 1
@@ -19,11 +19,11 @@ scheduler_events: # Study https://boto3.amazonaws.com/v1/documentation/api/lates
     mode: "FLEXIBLE"
     maximum_window_in_minutes: 3
 scheduler_events_fundamental:
-  name: "HydrographyEventsFundamental"
+  name: "HydrographyWarningContinuous"
   schedule_expression: "rate(2 hours)"
   schedule_expression_timezone: "Europe/Dublin"
   target:
-    arn_node: "schedule-target-arn-h-events-fundamental"
+    arn_node: "schedule-target-arn-h-warning-continuous"
     retry_policy:
       maximum_event_age_in_seconds: 900
       maximum_retry_attempts: 1
