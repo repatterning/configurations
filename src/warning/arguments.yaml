@@ -7,7 +7,7 @@ project_key_name: "HydrographyProject" # The project's key name
 testing: True # A test run?
 scheduler_events: # Study https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/scheduler.html
   name: "HydrographyEvents"
-  schedule_expression: "cron(15 11,23 \* \* \? \*)"
+  schedule_expression: cron(15 11,23 * * ? *)
   schedule_expression_timezone: "Europe/Dublin"
   target:
     arn_node: "schedule-target-arn-h-events"
