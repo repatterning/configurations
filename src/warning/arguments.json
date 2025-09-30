@@ -7,11 +7,12 @@
   "cpu": true,
   "project_key_name": "HydrographyProject",
   "testing": true,
-  "scheduler": {
-    "name": "HydrographyWarningSystem",
-    "schedule_expression": "rate(2 hours)",
+  "scheduler_events": {
+    "name": "HydrographyEvents",
+    "schedule_expression": "rate(10.5 hours)",
     "schedule_expression_timezone": "Europe/Dublin",
     "target": {
+      "arn_node": "schedule-target-arn-h-events",
       "retry_policy": {
         "maximum_event_age_in_seconds": 900,
         "maximum_retry_attempts": 1
@@ -21,6 +22,23 @@
     "flexible_time_window": {
       "mode": "FLEXIBLE",
       "maximum_window_in_minutes": 3
+    }
+  },
+  "scheduler_events_fundamental": {
+    "name": "HydrographyEventsFundamental",
+    "schedule_expression": "rate(2 hours)",
+    "schedule_expression_timezone": "Europe/Dublin",
+    "target": {
+      "arn_node": "schedule-target-arn-h-events-fundamental",
+      "retry_policy": {
+        "maximum_event_age_in_seconds": 900,
+        "maximum_retry_attempts": 1
+      }
+    },
+    "action_after_completion": "DELETE",
+    "flexible_time_window": {
+      "mode": "FLEXIBLE",
+      "maximum_window_in_minutes": 2
     }
   }
 }
