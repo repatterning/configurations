@@ -7,7 +7,7 @@
   "cpu": true,
   "project_key_name": "HydrographyProject",
   "testing": true,
-  "scheduler_events": {
+  "scheduler_events_forecasting": {
     "name": "HydrographyWarningDiscrete",
     "schedule_expression": "cron(45 09,21 * * ? *)",
     "schedule_expression_timezone": "Europe/Dublin",
@@ -39,6 +39,23 @@
     "flexible_time_window": {
       "mode": "FLEXIBLE",
       "maximum_window_in_minutes": 2
+    }
+  },
+  "scheduler_continuous": {
+    "name": "HydrographyContinuous",
+    "schedule_expression": "cron(05 02 ? * * 2025)",
+    "schedule_expression_timezone": "Europe/Dublin",
+    "target": {
+      "arn_node": "schedule-target-arn-h-continuous",
+      "retry_policy": {
+        "maximum_event_age_in_seconds": 900,
+        "maximum_retry_attempts": 1
+      }
+    },
+    "action_after_completion": "DELETE",
+    "flexible_time_window": {
+      "mode": "FLEXIBLE",
+      "maximum_window_in_minutes": 6
     }
   }
 }
