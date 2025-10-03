@@ -1,7 +1,4 @@
 {
-  "maps": {
-    "desc": "Maps illustrating weighted rates of change around gauge stations."
-  },
   "menu": {
     "desc": "For selecting via a gauge's time series identifier."
   },
