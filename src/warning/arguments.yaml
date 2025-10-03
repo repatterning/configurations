@@ -48,3 +48,20 @@ scheduler_continuous:
     year: 2025
     month: 11
     day: 30
+scheduler_warning:
+  name: "HydrographyWarning"
+  schedule_expression: "rate(12 hours)"
+  schedule_expression_timezone: "Europe/Dublin"
+  target:
+    arn_node: "schedule-target-arn-h-warning"
+    retry_policy:
+      maximum_event_age_in_seconds: 900
+      maximum_retry_attempts: 1
+  action_after_completion: "DELETE"
+  flexible_time_window:
+    mode: "FLEXIBLE"
+    maximum_window_in_minutes: 1
+  terminate:
+    year: 2025
+    month: 11
+    day: 30
