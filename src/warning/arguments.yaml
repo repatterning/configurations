@@ -5,6 +5,7 @@ s3:
 cpu: True # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
 project_key_name: "HydrographyProject" # The project's key name
 testing: True # A test run?
+n_catchments_limit: 6 # Initially limiting the number of catchments in focus vis-à-vis warning period (a) forecasts, and (b) risks maps
 scheduler_events_forecasting: # Study https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/scheduler.html
   name: "HydrographyWarningDiscrete"
   schedule_expression: cron(45 09,21 * * ? *)
