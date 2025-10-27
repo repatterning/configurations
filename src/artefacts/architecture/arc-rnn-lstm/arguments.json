@@ -1,0 +1,29 @@
+{
+  "seed": 25,
+  "spanning": 2.0,
+  "frequency": "h",
+  "n_sequence": 96,
+  "n_points_testing": 18,
+  "n_points_future": 13,
+  "scaling": {
+    "features": ["measure"]
+  },
+  "modelling": {
+    "fields": ["measure"],
+    "targets": ["measure"],
+    "epochs": 19,
+    "patience": 5,
+    "batch_size": 32
+  },
+  "s3": {
+    "p_bucket": "internal",
+    "p_prefix": "path_internal_data",
+    "affix": "resamples"
+  },
+  "series": {
+    "excerpt": [54464010, 54611010, 54448010]
+  },
+  "cpu": false,
+  "project_tag": "hydrography",
+  "project_key_name": "HydrographyProject"
+}
