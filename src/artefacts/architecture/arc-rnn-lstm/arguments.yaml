@@ -1,17 +1,17 @@
 seed: 25
-spanning: 2.0 # 2.0 years of data for modelling
+spanning: 2.0 # 2.0 years of data for modelling.
 frequency: "h" # The data granularity for model development; hour.
-n_sequence: 96 # The length, with respect to frequency points, of the learning sequence, i.e., history
-n_points_testing: 18
-n_points_future: 13
+n_sequence: 96 # The length, vis-à-vis frequency points, of the learning sequence, i.e., length of history.
+n_points_testing: 18 # The number of points to predict during the testing stage.
+n_points_future: 13 # The number of future points to predict.
 scaling:
-  features: ["measure"]
+  features: ["measure"] # The variables that will undergo scaling.
 modelling:
-  fields: ["measure"]
-  targets: ["measure"]
-  epochs: 19
-  patience: 5
-  batch_size: 32
+  fields: ["measure"] # The input field/s of the deep learning architecture.
+  targets: ["measure"] # The target field/s of the deep learning architecture.
+  epochs: 19 # The number of epochs.
+  patience: 5 # Early stopping patience.
+  batch_size: 32 # Batch size.
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
@@ -19,5 +19,5 @@ s3:
 series:
   excerpt: [54464010, 54611010, 54448010] # If null, models are built for all series/gauges
 cpu: False # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
-project_tag: "hydrography"
-project_key_name: "HydrographyProject" # The project's key name
+project_tag: "hydrography" # The project's tag, in aid of cost tracking.
+project_key_name: "HydrographyProject" # The project's key name.
