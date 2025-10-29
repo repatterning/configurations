@@ -23,6 +23,12 @@
       "loss": "Per epoch, and in order, mean(square(y_true - y_predicted))",
       "root_mean_squared_error": "Per epoch, and in order, sqrt(mean(square(y_predicted - y_true)))"
     },
+    "model.keras": {
+      "desc": "The recurrent neural network, i.e., long short term memory, model for the gauge point."
+    },
+    "modelling.json": {
+      "desc": "Outlines the modelling input variables, output variables, number of epochs, and batch size."
+    },
     "testing.csv": {
       "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
       "ts_id": "The water level time series identification code.",
@@ -32,11 +38,7 @@
       "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
-    },
-    "model.keras": {
-      "desc": "The recurrent neural network, i.e., long short term memory, model for the gauge point."
     }
-
   },
   "latest": {
     "data.csv": {
