@@ -9,14 +9,12 @@
       "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres.",
-      "date": "The date string format of timestamp, unnecessary.  Drop.",
       "e_measure": "The estimates of - measure - by model.keras"
     },
     "e_training.csv": {
       "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres.",
-      "date": "The date string format of timestamp, unnecessary.  Drop.",
       "e_measure": "The estimates of - measure - by model.keras"
     },
     "history": {
