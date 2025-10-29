@@ -27,7 +27,10 @@
       "desc": "The recurrent neural network, i.e., long short term memory, model for the gauge point."
     },
     "modelling.json": {
-      "desc": "Outlines the modelling input variables, output variables, number of epochs, and batch size."
+      "desc": "Outlines the modelling input variables, output variables, epochs value, and batch size."
+    },
+    "scaling.json": {
+      "desc": "Outlines the scaling attributes for the data of a model."
     },
     "testing.csv": {
       "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
