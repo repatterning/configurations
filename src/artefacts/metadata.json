@@ -1,4 +1,43 @@
 {
+  "arc-rnn-lstm": {
+    "data.csv": {
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
+      "ts_id": "The water level time series identification code.",
+      "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
+    },
+    "e_testing.csv": {
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
+      "ts_id": "The water level time series identification code.",
+      "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres.",
+      "date": "The date string format of timestamp, unnecessary.  Drop.",
+      "e_measure": "The estimates of - measure - by model.keras"
+    },
+    "e_training.csv": {
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
+      "ts_id": "The water level time series identification code.",
+      "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres.",
+      "date": "The date string format of timestamp, unnecessary.  Drop.",
+      "e_measure": "The estimates of - measure - by model.keras"
+    },
+    "history": {
+      "loss": "Per epoch, and in order, mean(square(y_true - y_predicted))",
+      "root_mean_squared_error": "Per epoch, and in order, sqrt(mean(square(y_predicted - y_true)))"
+    },
+    "testing.csv": {
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
+      "ts_id": "The water level time series identification code.",
+      "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
+    },
+    "training.csv": {
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
+      "ts_id": "The water level time series identification code.",
+      "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
+    },
+    "model.keras": {
+      "desc": "The recurrent neural network, i.e., long short term memory, model for the gauge point."
+    }
+
+  },
   "latest": {
     "data.csv": {
       "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
