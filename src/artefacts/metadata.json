@@ -1,4 +1,46 @@
 {
+  "arc-rnn-lstm": {
+    "data.csv": {
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
+      "ts_id": "The water level time series identification code.",
+      "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
+    },
+    "e_testing.csv": {
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
+      "ts_id": "The water level time series identification code.",
+      "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres.",
+      "e_measure": "The estimates of - measure - by model.keras"
+    },
+    "e_training.csv": {
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
+      "ts_id": "The water level time series identification code.",
+      "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres.",
+      "e_measure": "The estimates of - measure - by model.keras"
+    },
+    "history": {
+      "loss": "Per epoch, and in order, mean(square(y_true - y_predicted))",
+      "root_mean_squared_error": "Per epoch, and in order, sqrt(mean(square(y_predicted - y_true)))"
+    },
+    "model.keras": {
+      "desc": "The recurrent neural network, i.e., long short term memory, model for the gauge point."
+    },
+    "modelling.json": {
+      "desc": "Outlines the modelling input variables, output variables, epochs value, and batch size."
+    },
+    "scaling.json": {
+      "desc": "Outlines the scaling attributes for the data of a model."
+    },
+    "testing.csv": {
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
+      "ts_id": "The water level time series identification code.",
+      "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
+    },
+    "training.csv": {
+      "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
+      "ts_id": "The water level time series identification code.",
+      "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
+    }
+  },
   "latest": {
     "data.csv": {
       "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
