@@ -17,7 +17,7 @@
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres.",
       "e_measure": "The estimates of - measure - by model.keras"
     },
-    "history": {
+    "history.csv": {
       "loss": "Per epoch, and in order, mean(square(y_true - y_predicted))",
       "root_mean_squared_error": "Per epoch, and in order, sqrt(mean(square(y_predicted - y_true)))"
     },
