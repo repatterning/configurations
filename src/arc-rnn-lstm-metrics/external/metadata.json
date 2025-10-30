@@ -1,0 +1,8 @@
+{
+  "menu": {
+    "desc": "For selecting via a gauge's time series identifier."
+  },
+  "errors": {
+    "desc": "Percentage error distributions."
+  }
+}
