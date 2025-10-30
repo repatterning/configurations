@@ -6,7 +6,7 @@
   },
   "cpu": true,
   "project_key_name": "HydrographyProject",
-  "testing": false,
+  "testing": true,
   "n_catchments_limit": 6,
   "scheduler_events_forecasting": {
     "name": "HydrographyWarningDiscrete",
