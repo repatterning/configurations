@@ -41,7 +41,7 @@
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
     }
   },
-  "latest": {
+  "arc-state-space-mixture": {
     "data.csv": {
       "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
@@ -75,7 +75,7 @@
     }
 
   },
-  "variational": {
+  "arc-state-space-sandbox": {
     "data.csv": {
       "timestamp": "The timestamp of a measurement, milliseconds since 1 January 1970.",
       "value": "The water level above a fixed measuring point, i.e., above the station Gauge Datum, in metres.",
