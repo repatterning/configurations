@@ -1,0 +1,8 @@
+{
+  "menu": {
+    "desc": "For selecting via a gauge's time series identifier."
+  },
+  "points": {
+    "desc": "The estimates of known points, and the forecasts of future points.  The estimates block includes an absolute percentage error field, i.e., the - ape - field."
+  }
+}
