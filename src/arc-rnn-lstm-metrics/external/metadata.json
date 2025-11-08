@@ -1,8 +1,11 @@
 {
   "menu": {
-    "desc": "For selecting via a gauge's time series identifier."
+    "desc": "For selecting a - points - graph via its gauge-time-series identifier."
   },
-  "errors": {
-    "desc": "Percentage error distributions."
+  "points": {
+    "desc": "For illustrating predictions with respect to training and testing data, alongside absolute percentage error per point.  Additional, it records a set of absolute percentage error quantile distributions."
+  },
+  "aggregates": {
+    "desc": "For illustrating mean or median error metrics per gauge."
   }
 }
