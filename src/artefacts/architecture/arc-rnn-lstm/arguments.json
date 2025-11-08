@@ -4,14 +4,14 @@
   "frequency": "h",
   "n_sequence": 96,
   "n_points_testing": 23,
-  "n_points_future": 21,
+  "n_points_future": 19,
   "scaling": {
     "features": ["measure"]
   },
   "modelling": {
     "fields": ["measure"],
     "targets": ["measure"],
-    "epochs": 19,
+    "epochs": 25,
     "patience": 5,
     "batch_size": 32
   },
@@ -21,7 +21,7 @@
     "affix": "resamples"
   },
   "series": {
-    "excerpt": [54464010, 54611010, 54448010]
+    "excerpt": [54464010, 54611010, 54448010, 57199010, 59393010, 59311010, 59336010]
   },
   "cpu": false,
   "project_tag": "hydrography",
