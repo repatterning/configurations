@@ -9,7 +9,7 @@ scaling:
 modelling:
   fields: ["measure"] # The input field/s of the deep learning architecture.
   targets: ["measure"] # The target field/s of the deep learning architecture.
-  epochs: 21 # The number of epochs.
+  epochs: 27 # The number of epochs.
   patience: 5 # Early stopping patience.
   batch_size: 32 # Batch size.
 s3:
