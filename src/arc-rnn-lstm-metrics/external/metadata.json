@@ -6,6 +6,6 @@
     "desc": "For illustrating predictions with respect to training and testing data, alongside absolute percentage error per point.  Additional, it records a set of absolute percentage error quantile distributions."
   },
   "aggregates": {
-    "desc": "For illustrating mean or median error metrics per gauge."
+    "desc": "The menu and data - catchments.json and aggregates.json, respectively - for illustrating mean or median error metrics per gauge.  Each menu item is a catchment area. The metrics are root mean square error, root median square error, mean percentage error, median percentage error, mean error, median error."
   }
 }
