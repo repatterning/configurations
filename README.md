@@ -2,7 +2,7 @@
 
 ## Configurations
 
-Future steps:
+Upcoming:
 
 - [ ] Add `project-key-name` to the `s3_parameters.*` files.
 
