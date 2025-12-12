@@ -107,6 +107,5 @@
       "ts_id": "The water level time series identification code.",
       "measure": "The sum of value and a gauge's gauge datum.  The unit of measure of each is metres."
     }
-
   }
 }
