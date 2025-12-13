@@ -2,16 +2,16 @@
   "seed": 25,
   "spanning": 1.25,
   "frequency": "h",
-  "n_sequence": 96,
-  "n_points_testing": 15,
-  "n_points_future": 13,
+  "n_sequence": 360,
+  "n_points_testing": 23,
+  "n_points_future": 21,
   "scaling": {
     "features": ["measure"]
   },
   "modelling": {
     "fields": ["measure"],
     "targets": ["measure"],
-    "epochs": 27,
+    "epochs": 21,
     "patience": 5,
     "batch_size": 32
   },
@@ -22,6 +22,9 @@
   },
   "series": {
     "excerpt": [54464010, 54611010, 54448010, 57199010, 59393010, 59311010, 59336010]
+  },
+  "catchments": {
+    "excerpt": [277174, 277183]
   },
   "cpu": false,
   "project_tag": "hydrography",
