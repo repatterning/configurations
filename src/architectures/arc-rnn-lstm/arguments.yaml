@@ -17,9 +17,9 @@ s3:
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
   affix: "resamples" # Extends the prefix; vis-à-vis source.
 series:
-  excerpt: [54464010, 54611010, 54448010, 57199010, 59393010, 59311010, 59336010] # Each is a series code.  If null, models are built for all series/gauges.
+  excerpt: [54448010, 54464010, 54480010, 54611010, 54677010, 54693010, 54814010, 57199010, 59393010, 59311010, 59336010, 57379010, 57693010, 57047010] # Each is a series code.  If null, models are built for all series/gauges.
 catchments:
-  excerpt: [277174, 277183] # Each is a catchment code.  If null, models are built for all series/gauges within a catchment.
+  excerpt: [277174, 277183, 277149, 277152] # Each is a catchment code.  If null, models are built for all series/gauges within a catchment.
 cpu: False # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
 project_tag: "hydrography" # The project's tag, in aid of cost tracking.
 project_key_name: "HydrographyProject" # The project's key name.
