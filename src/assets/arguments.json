@@ -1,0 +1,10 @@
+{
+  "seed": 25,
+  "s3": {
+    "p_bucket": "internal",
+    "p_prefix": "path_internal_data",
+    "affix": "resamples"
+  },
+  "project_tag": "hydrography",
+  "project_key_name": "HydrographyProject"
+}
