@@ -1,6 +1,6 @@
 {
   "seed": 25,
-  "spanning": 1.25,
+  "spanning": 1.75,
   "frequency": "h",
   "n_sequence": 360,
   "n_points_testing": 23,
