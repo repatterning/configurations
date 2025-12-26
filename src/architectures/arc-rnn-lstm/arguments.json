@@ -11,9 +11,10 @@
   "modelling": {
     "fields": ["measure"],
     "targets": ["measure"],
-    "epochs": 27,
+    "epochs": 35,
     "patience": 5,
-    "batch_size": 32
+    "units": [128, 135, 160],
+    "batch_size": [32, 64]
   },
   "s3": {
     "p_bucket": "internal",
