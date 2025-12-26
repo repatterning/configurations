@@ -9,9 +9,10 @@ scaling:
 modelling:
   fields: ["measure"] # The input field/s of the deep learning architecture.
   targets: ["measure"] # The target field/s of the deep learning architecture.
-  epochs: 27 # The number of epochs.
+  epochs: 35 # The number of epochs.
   patience: 5 # Early stopping patience.
-  batch_size: 32 # Batch size.
+  units: [128, 135, 160] # The number of units choices, vis-à-vis long short-term memory architecture
+  batch_size: [32, 64] # Batch size.
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
