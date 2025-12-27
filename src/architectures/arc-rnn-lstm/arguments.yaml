@@ -13,13 +13,28 @@ modelling:
   patience: 5 # Early stopping patience.
   units: [160] # The number of units choices, vis-à-vis long short-term memory architecture
   batch_size: [32, 64] # Batch size.
+  inspect:
+    destination: "assets-t/arc-rnn-lstm"
+  live: # ... vis-à-vis direct transfers after inspection
+    source: "assets-t/arc-rnn-lstm"
+    destination: "assets/arc-rnn-lstm"
+metrics:
+  inspect:
+    source: "assets-t/arc-rnn-lstm"
+    destination: "warehouse-t/arc-rnn-lstm-metrics"
+  live: # ... vis-à-vis direct transfers after inspection
+    source: "warehouse-t/arc-rnn-lstm-metrics"
+    destination: "warehouse/arc-rnn-lstm-metrics"
 inference:
-  live:
-    source: "assets/arc-rnn-lstm" # The prefix of the storage area of the artefacts of models
-    destination: "warehouse/arc-rnn-lstm-inference" # The storage area prefix for the inference artefacts
   inspect:
     source: "assets-t/arc-rnn-lstm" # The prefix of the storage area of the artefacts of models; inspection stage.
     destination: "warehouse-t/arc-rnn-lstm-inference" # The storage area prefix for the inference artefacts; inspection stage.
+  live:
+    source: "assets/arc-rnn-lstm" # The prefix of the storage area of the artefacts of models
+    destination: "warehouse/arc-rnn-lstm-inference" # The storage area prefix for the inference artefacts
+service:
+  source: "assets/arc-rnn-lstm"
+  destination: null
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
