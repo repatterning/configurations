@@ -14,17 +14,38 @@
     "epochs": 11,
     "patience": 5,
     "units": [160],
-    "batch_size": [32, 64]
+    "batch_size": [32, 64],
+    "inspect": {
+      "destination": "assets-t/arc-rnn-lstm"
+    },
+    "live": {
+      "source": "assets-t/arc-rnn-lstm",
+      "destination": "assets/arc-rnn-lstm"
+    }
+  },
+  "metrics": {
+    "inspect": {
+      "source": "assets-t/arc-rnn-lstm",
+      "destination": "warehouse-t/arc-rnn-lstm-metrics"
+    },
+    "live": {
+      "source": "warehouse-t/arc-rnn-lstm-metrics",
+      "destination": "warehouse/arc-rnn-lstm-metrics"
+    }
   },
   "inference": {
-    "live": {
-      "source": "assets/arc-rnn-lstm",
-      "destination": "warehouse/arc-rnn-lstm-inference"
-    },
     "inspect": {
       "source": "assets-t/arc-rnn-lstm",
       "destination": "warehouse-t/arc-rnn-lstm-inference"
+    },
+    "live": {
+      "source": "assets/arc-rnn-lstm",
+      "destination": "warehouse/arc-rnn-lstm-inference"
     }
+  },
+  "service": {
+    "source": "assets/arc-rnn-lstm",
+    "destination": null
   },
   "s3": {
     "p_bucket": "internal",
