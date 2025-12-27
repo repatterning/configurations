@@ -13,6 +13,11 @@ modelling:
   patience: 5 # Early stopping patience.
   units: [160] # The number of units choices, vis-à-vis long short-term memory architecture
   batch_size: [32, 64] # Batch size.
+  inspect:
+    destination: "assets-t/arc-rnn-lstm"
+  live:
+    source: "assets-t/arc-rnn-lstm"
+    destination: "assets/arc-rnn-lstm"
 inference:
   live:
     source: "assets/arc-rnn-lstm" # The prefix of the storage area of the artefacts of models
