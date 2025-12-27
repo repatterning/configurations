@@ -1,4 +1,4 @@
-seed: 25
+seed: 35
 spanning: 1.75 # The number of years of data for modelling.
 frequency: "h" # The data granularity for model development; hour.
 n_sequence: 360 # The length, vis-à-vis frequency points, of the learning sequence, i.e., length of history.
@@ -9,9 +9,9 @@ scaling:
 modelling:
   fields: ["measure"] # The input field/s of the deep learning architecture.
   targets: ["measure"] # The target field/s of the deep learning architecture.
-  epochs: 35 # The number of epochs.
+  epochs: 11 # The number of epochs.
   patience: 5 # Early stopping patience.
-  units: [128, 135, 160] # The number of units choices, vis-à-vis long short-term memory architecture
+  units: [160] # The number of units choices, vis-à-vis long short-term memory architecture
   batch_size: [32, 64] # Batch size.
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
