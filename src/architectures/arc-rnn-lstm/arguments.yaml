@@ -32,9 +32,12 @@ inference:
   live:
     source: "assets/arc-rnn-lstm" # The prefix of the storage area of the artefacts of models
     destination: "warehouse/arc-rnn-lstm-inference" # The storage area prefix for the inference artefacts
-service:
-  source: "assets/arc-rnn-lstm"
-  destination: null
+  service:
+    source: "assets/arc-rnn-lstm"
+    destination: null
+  warning:
+    source: "assets/arc-rnn-lstm"
+    destination: "warehouse/arc-rnn-lstm-warning"
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
