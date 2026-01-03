@@ -44,7 +44,7 @@
   },
   "scheduler_continuous": {
     "name": "HydrographyContinuous",
-    "schedule_expression": "cron(10 02 ? * * 2025)",
+    "schedule_expression": "cron(10 02 ? * * 2026)",
     "schedule_expression_timezone": "Europe/Dublin",
     "target": {
       "arn_node": "schedule-target-arn-h-continuous",
