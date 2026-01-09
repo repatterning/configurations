@@ -11,8 +11,9 @@
   "modelling": {
     "fields": ["measure"],
     "targets": ["measure"],
-    "epochs": 11,
-    "patience": 5,
+    "epochs": 9,
+    "patience": 3,
+    "min_delta": 0.000005,
     "units": [135, 160],
     "batch_size": [32, 64],
     "inspect": {
