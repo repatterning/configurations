@@ -21,8 +21,14 @@
       "loss": "Per epoch, and in order, mean(square(y_true - y_predicted))",
       "root_mean_squared_error": "Per epoch, and in order, sqrt(mean(square(y_predicted - y_true)))"
     },
-    "model.keras": {
-      "desc": "The recurrent neural network, i.e., long short term memory, model for the gauge point."
+    "config.json": {
+      "desc": "model/config.json -> The recurrent neural network, i.e., long short term memory, model config."
+    },
+    "metadata.json": {
+      "desc": "model/metadata.json -> The metadata file of the model."
+    },
+    "model.weights.h5": {
+      "desc": "model/model.weights.h5 -> The model weights."
     },
     "modelling.json": {
       "desc": "Outlines the modelling input variables, output variables, epochs value, and batch size."
