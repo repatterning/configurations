@@ -6,6 +6,6 @@
     "desc": "For illustrating predictions with respect to training and testing data, alongside absolute percentage error per point.  Additionally, it records absolute percentage error quantile distributions."
   },
   "aggregates": {
-    "desc": "The menu and data - catchments.json and aggregates.json, respectively - for illustrating mean or median error metrics per gauge.  Each menu item is a catchment area. The metrics are root mean square error (r_mean_se), root median square error (r_median_se), mean percentage error (mean_pe), median percentage error (median_pe), mean error (mean_e), median error (median_e)."
+    "desc": "Together catchments.json and aggregates.json - menu and data, respectively - are for illustrating error metrics per gauge and catchment.  Each menu item is a catchment area. The metrics are root mean square error (r_mean_se), root median square error (r_median_se), mean percentage error (mean_pe), median percentage error (median_pe), mean error (mean_e), median error (median_e), percentage error lower whisker (l_whisker), percentage error upper whisker (u_whisker).  Finally, aggregates.json is a derivative of statements.json - structurally different."
   }
 }
