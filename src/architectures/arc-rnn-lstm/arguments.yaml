@@ -14,31 +14,30 @@ modelling:
   min_delta: 0.000005 # https://keras.io/api/callbacks/early_stopping/
   units: [135, 160] # The number of units choices, vis-à-vis long short-term memory architecture
   batch_size: [32, 64] # Batch size.
-  inspect:
-    destination: "assets-t/arc-rnn-lstm"
-  live: # ... vis-à-vis direct transfers after inspection
-    source: "assets-t/arc-rnn-lstm"
-    destination: "assets/arc-rnn-lstm"
+  path: # ... for the artefacts.
+    initial: "architecture/arc-rnn-lstm/initial"
+    live: "architecture/arc-rnn-lstm/live"
 metrics:
-  inspect:
-    source: "assets-t/arc-rnn-lstm"
-    destination: "warehouse-t/arc-rnn-lstm-metrics"
-  live: # ... vis-à-vis direct transfers after inspection
-    source: "warehouse-t/arc-rnn-lstm-metrics"
-    destination: "warehouse/arc-rnn-lstm-metrics"
+  path: # ... vis-à-vis models; initial & live stages.
+    initial: "warehouse/architecture/arc-rnn-lstm/initial/metrics"
+    live: "warehouse/architecture/arc-rnn-lstm/live/metrics"
 inference:
-  inspect:
-    source: "assets-t/arc-rnn-lstm" # The prefix of the storage area of the artefacts of models; inspection stage.
-    destination: "warehouse-t/arc-rnn-lstm-inference" # The storage area prefix for the inference artefacts; inspection stage.
+  initial:
+    model: "initial" # The modelling path
+    destination: "warehouse/architecture/arc-rnn-lstm/initial/inference" # The storage area prefix for the inference artefacts; pre-live.
+    n_samples_use_: 180 # The number of historic-days-of-estimates to include in forecast graphs.
   live:
-    source: "assets/arc-rnn-lstm" # The prefix of the storage area of the artefacts of models
-    destination: "warehouse/arc-rnn-lstm-inference" # The storage area prefix for the inference artefacts
+    model: "live" # The modelling path
+    destination: "warehouse/architecture/arc-rnn-lstm/live/inference" # The storage area prefix for the inference artefacts.
+    n_samples_use_: 180 # The number of historic-days-of-estimates to include in forecast graphs.
   service:
-    source: "assets/arc-rnn-lstm"
-    destination: null # This will be the storage area prefix for on-demand request.
+    model: "live" # The modelling path
+    destination: "warehouse/architecture/arc-rnn-lstm/service/inference" # This will be the storage area prefix for on-demand request.
+    n_samples_use_: 35 # The number of historic-days-of-estimates to include in forecast graphs.
   warning:
-    source: "assets/arc-rnn-lstm"
-    destination: "warehouse/arc-rnn-lstm-warning" # The storage area prefix for the inference artefacts; warning periods.
+    model: "live" # The modelling path
+    destination: "warehouse/architecture/arc-rnn-lstm/warning/inference" # The storage area prefix for the inference artefacts; warning periods.
+    n_samples_use_: 90 # The number of historic-days-of-estimates to include in forecast graphs.
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.

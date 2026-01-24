@@ -16,40 +16,37 @@
     "min_delta": 0.000005,
     "units": [135, 160],
     "batch_size": [32, 64],
-    "inspect": {
-      "destination": "assets-t/arc-rnn-lstm"
-    },
-    "live": {
-      "source": "assets-t/arc-rnn-lstm",
-      "destination": "assets/arc-rnn-lstm"
+    "path": {
+      "initial": "architecture/arc-rnn-lstm/initial",
+      "live": "architecture/arc-rnn-lstm/live"
     }
   },
   "metrics": {
-    "inspect": {
-      "source": "assets-t/arc-rnn-lstm",
-      "destination": "warehouse-t/arc-rnn-lstm-metrics"
-    },
-    "live": {
-      "source": "warehouse-t/arc-rnn-lstm-metrics",
-      "destination": "warehouse/arc-rnn-lstm-metrics"
+    "path": {
+      "initial": "warehouse/architecture/arc-rnn-lstm/initial/metrics",
+      "live": "warehouse/architecture/arc-rnn-lstm/live/metrics"
     }
   },
   "inference": {
-    "inspect": {
-      "source": "assets-t/arc-rnn-lstm",
-      "destination": "warehouse-t/arc-rnn-lstm-inference"
+    "initial": {
+      "model": "initial",
+      "destination": "warehouse/architecture/arc-rnn-lstm/initial/inference",
+      "n_samples_use_": 180
     },
     "live": {
-      "source": "assets/arc-rnn-lstm",
-      "destination": "warehouse/arc-rnn-lstm-inference"
+      "model": "live",
+      "destination": "warehouse/architecture/arc-rnn-lstm/live/inference",
+      "n_samples_use_": 180
     },
     "service": {
-      "source": "assets/arc-rnn-lstm",
-      "destination": null
+      "model": "live",
+      "destination": "warehouse/architecture/arc-rnn-lstm/service/inference",
+      "n_samples_use_": 35
     },
     "warning": {
-      "source": "assets/arc-rnn-lstm",
-      "destination": "warehouse/arc-rnn-lstm-warning"
+      "model": "live",
+      "destination": "warehouse/architecture/arc-rnn-lstm/warning/inference",
+      "n_samples_use_": 90
     }
   },
   "s3": {
