@@ -14,11 +14,11 @@ modelling:
   min_delta: 0.000005 # https://keras.io/api/callbacks/early_stopping/
   units: [135, 160] # The number of units choices, vis-à-vis long short-term memory architecture
   batch_size: [32, 64] # Batch size.
-  path: # ... vis-à-vis direct transfers after inspection
+  path: # ... for the artefacts.
     initial: "architecture/arc-rnn-lstm/initial"
     live: "architecture/arc-rnn-lstm/live"
 metrics:
-  path: # ... vis-à-vis direct transfers after inspection
+  path: # ... vis-à-vis models; initial & live stages.
     initial: "warehouse/architecture/arc-rnn-lstm/initial/metrics"
     live: "warehouse/architecture/arc-rnn-lstm/live/metrics"
 inference:
