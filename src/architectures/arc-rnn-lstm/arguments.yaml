@@ -25,15 +25,19 @@ inference:
   initial:
     model: "initial" # The modelling path
     destination: "warehouse/architecture/arc-rnn-lstm/initial/inference" # The storage area prefix for the inference artefacts; pre-live.
+    n_samples_use_: 180 # The number of historic-days-of-estimates to include in forecast graphs.
   live:
     model: "live" # The modelling path
     destination: "warehouse/architecture/arc-rnn-lstm/live/inference" # The storage area prefix for the inference artefacts.
+    n_samples_use_: 180 # The number of historic-days-of-estimates to include in forecast graphs.
   service:
     model: "live" # The modelling path
     destination: "warehouse/architecture/arc-rnn-lstm/service/inference" # This will be the storage area prefix for on-demand request.
+    n_samples_use_: 35 # The number of historic-days-of-estimates to include in forecast graphs.
   warning:
     model: "live" # The modelling path
     destination: "warehouse/architecture/arc-rnn-lstm/warning/inference" # The storage area prefix for the inference artefacts; warning periods.
+    n_samples_use_: 90 # The number of historic-days-of-estimates to include in forecast graphs.
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
