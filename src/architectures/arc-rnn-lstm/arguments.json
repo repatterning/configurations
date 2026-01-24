@@ -30,19 +30,23 @@
   "inference": {
     "initial": {
       "model": "initial",
-      "destination": "warehouse/architecture/arc-rnn-lstm/initial/inference"
+      "destination": "warehouse/architecture/arc-rnn-lstm/initial/inference",
+      "n_samples_use_": 180
     },
     "live": {
       "model": "live",
-      "destination": "warehouse/architecture/arc-rnn-lstm/live/inference"
+      "destination": "warehouse/architecture/arc-rnn-lstm/live/inference",
+      "n_samples_use_": 180
     },
     "service": {
       "model": "live",
-      "destination": "warehouse/architecture/arc-rnn-lstm/service/inference"
+      "destination": "warehouse/architecture/arc-rnn-lstm/service/inference",
+      "n_samples_use_": 35
     },
     "warning": {
       "model": "live",
-      "destination": "warehouse/architecture/arc-rnn-lstm/warning/inference"
+      "destination": "warehouse/architecture/arc-rnn-lstm/warning/inference",
+      "n_samples_use_": 90
     }
   },
   "s3": {
