@@ -52,7 +52,7 @@
   "s3": {
     "p_bucket": "internal",
     "p_prefix": "path_internal_data",
-    "affix": "resamples"
+    "affix": "fundamentals"
   },
   "series": {
     "excerpt": [54448010, 54464010, 54480010, 54611010, 54677010, 54693010, 54814010, 57199010, 59393010, 59311010, 59336010, 57379010, 57693010, 57047010]
