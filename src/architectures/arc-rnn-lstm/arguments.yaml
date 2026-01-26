@@ -41,7 +41,7 @@ inference:
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
   p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
-  affix: "resamples" # Extends the prefix; vis-à-vis source.
+  affix: "fundamentals" # Extends the prefix; vis-à-vis source.
 series:
   excerpt: [54448010, 54464010, 54480010, 54611010, 54677010, 54693010, 54814010, 57199010, 59393010, 59311010, 59336010, 57379010, 57693010, 57047010] # Each is a series code.  If null, models are built for all series/gauges.
 catchments:
