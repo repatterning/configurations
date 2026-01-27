@@ -14,8 +14,8 @@
     "epochs": 9,
     "patience": 2,
     "min_delta": 0.00001,
-    "units": [135],
-    "batch_size": [32, 64],
+    "units": [135, 160],
+    "batch_size": [16, 32],
     "path": {
       "initial": "architecture/arc-rnn-lstm/initial",
       "live": "architecture/arc-rnn-lstm/live"
