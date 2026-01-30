@@ -1,6 +1,6 @@
 {
   "seed": 35,
-  "spanning": 1.75,
+  "spanning": 1.60,
   "frequency": "0.25h",
   "n_sequence": 1440,
   "n_points_testing": 92,
@@ -11,7 +11,7 @@
   "modelling": {
     "fields": ["measure"],
     "targets": ["measure"],
-    "epochs": 9,
+    "epochs": 8,
     "patience": 2,
     "min_delta": 0.00001,
     "units": [135, 160],
