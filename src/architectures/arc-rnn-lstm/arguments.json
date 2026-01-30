@@ -11,7 +11,7 @@
   "modelling": {
     "fields": ["measure"],
     "targets": ["measure"],
-    "epochs": 8,
+    "epochs": 9,
     "patience": 2,
     "min_delta": 0.00001,
     "units": [135, 160],
