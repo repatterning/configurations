@@ -31,12 +31,12 @@
     "initial": {
       "model": "initial",
       "destination": "warehouse/architecture/arc-rnn-lstm/initial/inference",
-      "n_samples_use_": 180
+      "n_samples_use_": 125
     },
     "live": {
       "model": "live",
       "destination": "warehouse/architecture/arc-rnn-lstm/live/inference",
-      "n_samples_use_": 180
+      "n_samples_use_": 125
     },
     "service": {
       "model": "live",
