@@ -6,8 +6,10 @@
   "frequency": "YS",
   "reacquire": false,
   "excerpt": [57031010],
-  "list_of_gauges": {
-    "bucket_type": "internal",
+  "list_of_gauges_store": {
+    "bucket_class": "internal",
     "prefix": "references/assets.csv"
-  }
+  },
+  "project_tag": "hydrography",
+  "project_key_name": "HydrographyProject"
 }
