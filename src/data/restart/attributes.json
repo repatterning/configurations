@@ -5,5 +5,9 @@
   "period": "P1Y",
   "frequency": "YS",
   "reacquire": false,
-  "excerpt": [57031010]
+  "excerpt": [57031010],
+  "list_of_gauges": {
+    "bucket_type": "internal",
+    "prefix": "references/assets.csv"
+  }
 }
