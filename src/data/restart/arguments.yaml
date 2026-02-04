@@ -8,3 +8,5 @@ excerpt: [57031010] # If not re-acquiring, a set of specific time series in focu
 list_of_gauges_store:
   bucket_class: "internal"
   prefix: "references/assets.csv"
+project_tag: "hydrography"
+project_key_name: "HydrographyProject"
