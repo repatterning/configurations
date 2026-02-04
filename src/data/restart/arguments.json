@@ -9,5 +9,7 @@
   "list_of_gauges_store": {
     "bucket_class": "internal",
     "prefix": "references/assets.csv"
-  }
+  },
+  "project_tag": "hydrography",
+  "project_key_name": "HydrographyProject"
 }
