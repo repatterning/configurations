@@ -1,10 +1,5 @@
-starting: "2017-01-01" # Acquisition start year
-ending: "2025-01-01" # Acquisition end year
-at_least: "2025-03-01" # Has data points until at least ...
-period: "P1Y" # Acquire data via annual chunks
-frequency: "YS" # The corresponding pandas.date_range frequency value, vis-à-vis period.
+period: 10 # years.  Acquire data year chunks
 reacquire: False # Reacquire all again
-excerpt: [57031010] # If not re-acquiring, a set of specific time series in focus; via time series codes, e.g., [57532010, 52488010]
 list_of_gauges_store:
   bucket_class: "internal"
   prefix: "references/assets.csv"
