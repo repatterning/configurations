@@ -1,11 +1,6 @@
 {
-  "starting": "2017-01-01",
-  "ending": "2025-01-01",
-  "at_least": "2025-03-01",
-  "period": "P1Y",
-  "frequency": "YS",
+  "period": 10,
   "reacquire": false,
-  "excerpt": [57031010],
   "list_of_gauges_store": {
     "bucket_class": "internal",
     "prefix": "references/assets.csv"
