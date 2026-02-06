@@ -1,5 +1,6 @@
 period: 10 # years.  Acquire data year chunks
 reacquire: False # Reacquire all again
+via_key: True # Use an application programming key?
 list_of_gauges_store:
   bucket_class: "internal"
   prefix: "references/assets.csv"
