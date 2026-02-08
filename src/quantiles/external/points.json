@@ -1,3 +1,3 @@
 {
-  "quantiles": "Each JSON of quantiles includes daily quantiles distributions of water level measures.  The water levels are relative to a gauge's gauge datum.  The quantile points are lower whisker, lower quartile, median, upper quartile, and upper whisker."
+  "quantiles": "Each JSON of quantiles includes daily quantiles distributions of river level measures.  The river levels are relative to a gauge's gauge datum.  The quantile points are lower whisker, lower quartile, median, upper quartile, and upper whisker."
 }
