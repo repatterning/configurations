@@ -1,0 +1,11 @@
+{
+  "aggregates": {
+    "desc": "A summary of characteristics per gauge station, and its timeseries."
+  },
+  "points": {
+    "desc": "Each JSON of quantiles includes daily quantiles distributions of river level measures.  The river levels are relative to a gauge's gauge datum.  The quantile points are lower whisker, lower quartile, median, upper quartile, and upper whisker."
+  },
+  "menu": {
+    "desc": "For selecting a gauge's graph of quantiles via the gauge's time series identifier."
+  }
+}
