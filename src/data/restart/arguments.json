@@ -1,7 +1,7 @@
 {
   "period": 10,
   "reacquire": false,
-  "via_key": false,
+  "via_key": true,
   "list_of_gauges_store": {
     "bucket_class": "internal",
     "prefix": "references/assets.csv"
