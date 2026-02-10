@@ -8,10 +8,12 @@ inference:
   initial:
     model: "initial"
     artefacts: "architecture/arc-rnn-lstm/initial"
+    metrics: "warehouse/architecture/arc-rnn-lstm/initial"
     destination: "warehouse/anomalies/initial" # The storage area prefix for the inference artefacts; pre-live.
   live:
     model: "live"
     artefacts: "architecture/arc-rnn-lstm/live"
+    metrics: "warehouse/architecture/arc-rnn-lstm/live"
     destination: "warehouse/anomalies/live" # The storage area prefix for the inference artefacts.
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
