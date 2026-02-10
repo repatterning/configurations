@@ -1,5 +1,5 @@
 seed: 35
-spanning: 0.25 # years -> Anomaly detection will span these number of years, till date
+spanning: 0.165 # years -> Anomaly detection will span these number of years, till date
 frequency: "0.25h" # The data granularity for model development; hour.
 n_sequence: 1440 # The length, vis-à-vis frequency points, of the learning sequence, i.e., length of history.
 scaling:
@@ -8,10 +8,12 @@ inference:
   initial:
     model: "initial"
     artefacts: "architecture/arc-rnn-lstm/initial"
+    metrics: "warehouse/architecture/arc-rnn-lstm/initial"
     destination: "warehouse/anomalies/initial" # The storage area prefix for the inference artefacts; pre-live.
   live:
     model: "live"
     artefacts: "architecture/arc-rnn-lstm/live"
+    metrics: "warehouse/architecture/arc-rnn-lstm/live"
     destination: "warehouse/anomalies/live" # The storage area prefix for the inference artefacts.
 s3:
   p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
