@@ -1,0 +1,29 @@
+{
+  "seed": 35,
+  "spanning": 0.25,
+  "frequency": "0.25h",
+  "n_sequence": 1440,
+  "scaling": {
+    "features": ["measure"]
+  },
+  "inference": {
+    "initial": {
+      "model": "initial",
+      "artefacts": "architecture/arc-rnn-lstm/initial",
+      "destination": "warehouse/anomalies/initial"
+    },
+    "live": {
+      "model": "live",
+      "artefacts": "architecture/arc-rnn-lstm/live",
+      "destination": "warehouse/anomalies/live"
+    }
+  },
+  "s3": {
+    "p_bucket": "internal",
+    "p_prefix": "path_internal_data",
+    "affix": "fundamentals"
+  },
+  "cpu": false,
+  "project_tag": "hydrography",
+  "project_key_name": "HydrographyProject"
+}
