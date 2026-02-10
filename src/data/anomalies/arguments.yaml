@@ -1,0 +1,22 @@
+seed: 35
+spanning: 0.25 # years -> Anomaly detection will span these number of years, till date
+frequency: "0.25h" # The data granularity for model development; hour.
+n_sequence: 1440 # The length, vis-à-vis frequency points, of the learning sequence, i.e., length of history.
+scaling:
+  features: ["measure"] # The variables that will undergo scaling.
+inference:
+  initial:
+    model: "initial"
+    artefacts: "architecture/arc-rnn-lstm/initial"
+    destination: "warehouse/anomalies/initial" # The storage area prefix for the inference artefacts; pre-live.
+  live:
+    model: "live"
+    artefacts: "architecture/arc-rnn-lstm/live"
+    destination: "warehouse/anomalies/live" # The storage area prefix for the inference artefacts.
+s3:
+  p_bucket: "internal" # An Amazon S3 (Simple Storage Service) bucket parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 bucket value.
+  p_prefix: "path_internal_data" # The Amazon S3 prefix parameter; vis-à-vis source.  The corresponding argument is an Amazon S3 prefix value.
+  affix: "fundamentals" # Extends the prefix; vis-à-vis source.
+cpu: False # Should computations proceed via a machine's Central Processing Unit only?  If False, computation will proceed via both graphics processing unit and central processing unit.
+project_tag: "hydrography" # The project's tag, in aid of cost tracking.
+project_key_name: "HydrographyProject" # The project's key name.
