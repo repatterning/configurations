@@ -9,9 +9,10 @@ scaling:
 modelling:
   fields: ["measure"] # The input field/s of the deep learning architecture.
   targets: ["measure"] # The target field/s of the deep learning architecture.
-  epochs: 9 # The number of epochs.
+  epochs: 15 # The number of epochs.
   patience: 2 # Early stopping patience.
-  min_delta: 0.00001 # https://keras.io/api/callbacks/early_stopping/
+  monitor: "root_mean_squared_error" # https://keras.io/api/callbacks/early_stopping/
+  min_delta: 0.0001 # https://keras.io/api/callbacks/early_stopping/ -> vis-à-vis monitoring metric, e.g., root mean square error, loss, etc.
   units: [135, 160] # The number of units choices, vis-à-vis long short-term memory architecture
   batch_size: [32] # Batch size.
   path: # ... for the artefacts.
