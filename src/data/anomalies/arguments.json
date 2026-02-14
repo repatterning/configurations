@@ -6,6 +6,16 @@
   "scaling": {
     "features": ["measure"]
   },
+  "detecting": {
+    "gap": {
+      "length": 4,
+      "field": "measure"
+    },
+    "asymptote": {
+      "length": 4,
+      "field": "measure"
+    }
+  },
   "inference": {
     "initial": {
       "model": "initial",
