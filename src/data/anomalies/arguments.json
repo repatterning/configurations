@@ -8,12 +8,10 @@
   },
   "detecting": {
     "gap": {
-      "length": 4,
-      "field": "measure"
+      "length": 4
     },
     "asymptote": {
-      "length": 4,
-      "field": "measure"
+      "length": 4
     }
   },
   "inference": {
