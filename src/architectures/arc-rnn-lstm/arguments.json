@@ -11,10 +11,10 @@
   "modelling": {
     "fields": ["measure"],
     "targets": ["measure"],
-    "epochs": 15,
+    "epochs": 9,
     "patience": 2,
-    "monitor": "root_mean_squared_error",
-    "min_delta": 0.0001,
+    "monitor": "loss",
+    "min_delta": 0.00001,
     "units": [135, 160],
     "batch_size": [32],
     "path": {
